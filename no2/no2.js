@@ -1,11 +1,21 @@
-function pizzaMozarella(score) {
-  // Tulis kodingan dibawah ini
-  result = 'Pizza';
-  return result;
+function pizzaMozarella(score){
+  for( let i=1 ; i <= score ; i++){
+    if (i%3 === 0){
+      console.log('Pizza');
+    }
+    else if (i%5 === 0){
+      console.log('Mozarella');
+    }
+    else if (i%3 === 0 && i%5 === 0){
+      console.log('PizzaMozarela');
+    }
+    else {
+      console.log(i);
+    }
+  }
 }
-
 // Test Case
-pizzaMozarella(15);
+console.log(pizzaMozarella(15));
 // 1
 // 2
 // Pizza
@@ -18,6 +28,6 @@ pizzaMozarella(15);
 // Mozarella
 // 11
 // Pizza
-// 13 
+// 13
 // 14
 // PizzaMozarella
