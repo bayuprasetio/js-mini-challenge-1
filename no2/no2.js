@@ -1,13 +1,13 @@
 function pizzaMozarella(score){
   for( let i=1 ; i <= score ; i++){
-    if (i%3 === 0){
+    if (i%3 === 0 && i%5 === 0){
+      console.log('PizzaMozarela');
+    }
+    else if (i%3 === 0) {
       console.log('Pizza');
     }
     else if (i%5 === 0){
       console.log('Mozarella');
-    }
-    else if (i%3 === 0 && i%5 === 0){
-      console.log('PizzaMozarela');
     }
     else {
       console.log(i);
@@ -15,7 +15,7 @@ function pizzaMozarella(score){
   }
 }
 // Test Case
-console.log(pizzaMozarella(15));
+(pizzaMozarella(15));
 // 1
 // 2
 // Pizza
